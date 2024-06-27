@@ -107,6 +107,7 @@ const Login = () => {
               </Center>
             )}
           </Box>
+          {/*
           {feConfigs?.concatMd && (
             <Box
               mt={8}
@@ -118,6 +119,7 @@ const Login = () => {
               无法登录，点击联系
             </Box>
           )}
+          */}
         </Flex>
 
         {isOpen && <CommunityModal onClose={onClose} />}
