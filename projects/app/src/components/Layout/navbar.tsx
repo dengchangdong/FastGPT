@@ -162,6 +162,7 @@ const Navbar = ({ unread }: { unread: number }) => {
           </Link>
         </Box>
       )}
+      {/* Documents
       {(feConfigs?.docUrl || feConfigs?.chatbotUrl) && (
         <MyTooltip label={t('common.system.Use Helper')} placement={'right-end'}>
           <Link
@@ -176,11 +177,12 @@ const Navbar = ({ unread }: { unread: number }) => {
           </Link>
         </MyTooltip>
       )}
+      */}
       {feConfigs?.show_git && (
         <MyTooltip label={`Git Star: ${gitStar}`} placement={'right-end'}>
           <Link
             as={NextLink}
-            href="https://github.com/labring/FastGPT"
+            href="https://github.com/dengchangdong/GPT-KB"
             target={'_blank'}
             {...itemStyles}
             {...hoverStyle}
