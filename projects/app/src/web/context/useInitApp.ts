@@ -14,21 +14,21 @@ export const useInitApp = () => {
   const { i18n } = useTranslation();
   const { loadGitStar, setInitd, feConfigs } = useSystemStore();
   const [scripts, setScripts] = useState<FastGPTFeConfigsType['scripts']>([]);
-  const [title, setTitle] = useState(process.env.SYSTEM_NAME || 'AI');
+  const [title, setTitle] = useState(process.env.SYSTEM_NAME || 'PandoraAI');
 
   const initFetch = useMemoizedFn(async () => {
     const {
       feConfigs: { scripts, isPlus, show_git, systemTitle }
     } = await clientInitData();
 
-    setTitle(systemTitle || 'FastGPT');
+    setTitle(systemTitle || 'PandoraAI');
 
     // log fastgpt
     if (!isPlus) {
       console.log(
-        '%cWelcome to FastGPT',
+        '%cWelcome to PandoraAI',
         'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;',
-        `GitHub：https://github.com/labring/FastGPT`
+        `GitHub：https://github.com/dengchangdong/GPT-KB`
       );
     }
     if (show_git) {
