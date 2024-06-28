@@ -43,7 +43,7 @@ const defaultFeConfigs: FastGPTFeConfigsType = {
   openAPIDocUrl: 'https://dash.pandoraai.io',
   systemTitle: 'PandoraAI',
   concatMd:
-    '项目开源地址: [FastGPT GitHub](https://github.com/dengchangdong/GPT-KB)',
+    '项目开源地址: [PandoraAI GitHub](https://github.com/dengchangdong/GPT-KB)',
   limit: {
     exportDatasetLimitMinutes: 0,
     websiteSyncLimitMinuted: 0
