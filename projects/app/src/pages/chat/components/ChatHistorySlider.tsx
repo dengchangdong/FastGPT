@@ -140,7 +140,7 @@ const ChatHistorySlider = ({
             fontSize={'sm'}
             onClick={() =>
               canRouteToDetail &&
-              router.replace({
+              router.push({
                 pathname: '/app/detail',
                 query: { appId }
               })
@@ -172,9 +172,10 @@ const ChatHistorySlider = ({
             onChange={setCurrentTab}
           />
         )}
+
         <Button
           variant={'whitePrimary'}
-          flex={['0 0 auto', 1]}
+          flex={[appId ? '0 0 auto' : 1, 1]}
           h={'100%'}
           color={'primary.600'}
           borderRadius={'xl'}
