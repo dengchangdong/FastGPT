@@ -40,9 +40,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 const defaultFeConfigs: FastGPTFeConfigsType = {
   show_emptyChat: true,
   show_git: true,
-  docUrl: 'https://www.pandoraai.io',
-  openAPIDocUrl: 'https://dash.pandoraai.io',
-  systemTitle: 'PandoraAI',
+  docUrl: 'https://www.matenext.com',
+  openAPIDocUrl: 'https://endpoint.dengchangdong.com',
+  systemTitle: 'MateNEXT',
   concatMd:
     '项目开源地址: [PandoraAI GitHub](https://github.com/dengchangdong/GPT-KB)',
   limit: {
