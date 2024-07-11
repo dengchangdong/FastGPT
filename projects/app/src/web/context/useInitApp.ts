@@ -26,7 +26,7 @@ export const useInitApp = () => {
     // log fastgpt
     if (!isPlus) {
       console.log(
-        '%cWelcome to PandoraAI',
+        '%cWelcome to MateNEXT',
         'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;',
         `GitHub：https://github.com/dengchangdong/GPT-KB`
       );
