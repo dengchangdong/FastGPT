@@ -14,7 +14,7 @@ export const useInitApp = () => {
   const { i18n } = useTranslation();
   const { loadGitStar, setInitd, feConfigs } = useSystemStore();
   const [scripts, setScripts] = useState<FastGPTFeConfigsType['scripts']>([]);
-  const [title, setTitle] = useState(process.env.SYSTEM_NAME || 'PandoraAI');
+  const [title, setTitle] = useState(process.env.SYSTEM_NAME || 'MateNEXT');
 
   const initFetch = useMemoizedFn(async () => {
     const {
